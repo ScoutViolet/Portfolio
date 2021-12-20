@@ -1,0 +1,25 @@
+header{
+    box-shadow: 12px 0px 10px gray;
+}
+.d-inline-block{
+    display: inline-block;
+}
+
+nav{
+    float: right;
+    margin-top: 10px;
+    font-size: 24px;
+}
+header{
+    box-shadow: 12px 0px 10px gray;
+    background-color: bisque;
+}
+nav a{
+    padding: 20px
+}
+#logo-div img{margin: 10px 10px; height: 100px; width: auto}
+
+main{
+    background-color: seashell;
+}
+p, h1{font-family: 'Cookie', cursive;}

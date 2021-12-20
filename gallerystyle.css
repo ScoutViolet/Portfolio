@@ -1,0 +1,58 @@
+body{
+    background-color: seashell;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-family: 'Cookie', cursive;
+}
+/* img{
+    width: 100%;
+    height: 250px;
+    margin: 10px;
+    /* border: 5px dotted orange; 
+}*/
+
+.header_section{
+    align-content: center;
+    width: 80%; /*This makes it off centerred*/
+    height: 20%
+}
+.media_div{
+    margin: 5px;
+    border: 1px solid brown;
+    background-image: radial-gradient(orange, pink);
+    box-shadow: red 2.5px px;
+    border-radius: 20%;
+    padding: 20px;
+    float: left;
+    align-content: center;
+    width: 22%;
+    height: auto;
+}
+/* .media_div img{
+    width: 95%;
+    height: auto;
+    border-radius: 10%;
+    border-radius: 10;
+    margin: 12px 2px auto; /* this is typically used when there are other imgaes * add slash later
+} */
+.media_div p{
+    text-align: center;
+    text-shadow: 4px 4px 4px red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.media_div video, img{
+    width: 80%;
+    height: 200px;
+    margin: 20px;
+    border: 5px solid skyblue;
+}
+.media_div iframe{
+    width: 80%;
+    height: 200px;
+    margin: 20px;
+    border: 5px solid blue
+}
