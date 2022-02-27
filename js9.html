@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Month: How many days?</title>
+</head>
+<body>
+    <h1>Choose month name to display the # of days</h1>
+    <label for="year">Enter the year</label><input type="text" id="year">
+    <br><br>
+    <select name="choosemonth" id="choosemonth">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+    <br><br>
+    <button onclick="monthchoose()">Click this after choosing your month!</button>
+    <br><br>
+    <input type="text" id="res" size="40" disabled>
+    <script>
+        function monthchoose(){
+            var a=parseInt(document.getElementById("year").value)
+            if (a%100==0)
+                if (a%400==0)
+                    var b="leapyear";
+                else
+                    var b="non-leap year";
+            else
+                if (a%4==0)
+                    var b="leapyear";
+                else 
+                    var b="non-leap year";
+            var c=document.getElementById("choosemonth").value;
+            switch (c)    {
+                case "January":
+                case "March":
+                case "May":
+                case "July":
+                case "August":
+                case "October":
+                case "December":
+                    document.getElementById("res").value="This year, the month of "+c+" has 31 days.";
+                    break;
+                case "April":
+                case "June":
+                case "September":
+                case "November":
+                    document.getElementById("res").value="This year, the month of "+c+" has 30 days";
+                    break;
+                case "February":
+                    if (b=="leapyear")
+                        document.getElementById("res").value="This year, the month of "+c+" has 29 days";
+                    else
+                        document.getElementById("res").value="This year, the month of "+c+" has 28 days";
+                    break;
+                default:
+                    alert("should not go here");
+            }
+        }
+    </script>
+</body>
+</html>

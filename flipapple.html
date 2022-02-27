@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(){
+            if (document.getElementById("b1").value=="Orange")
+            {
+                document.getElementById("x").src="orange.jpg";
+                document.getElementById("x").style.height="300px";
+                document.getElementById("x").style.width="400px";
+                document.getElementById("b1").value="Kiwi";
+                document.getElementById("b1").innerHTML="Kiwi";
+            }
+            else if (document.getElementById("b1").value=="Kiwi")
+            {
+                document.getElementById("x").src="kiwi.jpg";
+                document.getElementById("x").style.height="400px";
+                document.getElementById("x").style.width="400px";
+                document.getElementById("b1").value="Banana";
+                document.getElementById("b1").innerHTML="Banana";
+            }
+            else if (document.getElementById("b1").value=="Banana")
+            {
+                document.getElementById("x").src="banana.jpg";
+                document.getElementById("b1").value="Mango";
+                document.getElementById("b1").innerHTML="Mango";
+            }
+            else if (document.getElementById("b1").value=="Mango")
+            {
+                document.getElementById("x").src="mango.jfif";
+                document.getElementById("x").style.height="400px";
+                document.getElementById("x").style.width="500px";
+                document.getElementById("b1").value="Apple";
+                document.getElementById("b1").innerHTML="Apple";
+            }
+            else if (document.getElementById("b1").value=="Apple")
+            {
+                document.getElementById("x").style.height="400px";
+                document.getElementById("x").style.width="400px";
+                document.getElementById("x").src="apple.jpg";
+                document.getElementById("b1").value="Orange";
+                document.getElementById("b1").innerHTML="Orange";
+            }
+        }   
+    </script>
+</head>
+<body>
+    <h1>Click on the button to change the apple!</h1>
+    <button onclick="change()" id="b1" value="Orange">Orange</button>
+    <br><br>
+    <img src="apple.jpg" id="x" alt="" >
+</body>
+</html>

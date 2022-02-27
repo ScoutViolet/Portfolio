@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Functions Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <style>
+        table{
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        input[type=text]{
+            border-color: blue;
+            font-size: 20px;
+            font-weight: boloder;
+        }
+        input[type=button]
+        {
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 20%;
+            font:"Cookie, cursive";
+        }
+        #b1{
+            color: black;
+            background-color: red;
+        }
+        #b2{
+            color: black;
+            background-color: orangered;
+        }
+        #b3{
+            color: black;
+            background-color: orange;
+        }
+        #Add{
+            color: black;
+            background-color: rgb(248, 195, 19);
+        }
+        #b4{
+            color: black;
+            background-color: rgb(178, 243, 37);
+        }
+        #b5{
+            color: black;
+            background-color: rgb(111, 182, 29);
+        }
+        #b6{
+            color: black;
+            background-color: rgb(61, 105, 11);
+        }
+        #Sub{
+            color: black;
+            background-color:rgb(49, 133, 211);
+        }
+        #b7{
+            color: black;
+            background-color:blue
+        }
+        #b8{
+            color: white;
+            background-color:rgb(27, 76, 122)
+        }
+        #b9{
+            color: white;
+            background-color: rgb(123, 22, 182);
+        }
+        #b0{
+            color: white;
+            background-color:rgb(57, 7, 104);
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator (+,-,×,÷)</h1>
+    <table>
+        <tr>
+            <td colspan="4"> <input type="text" id="display" disabled style="text-align:right"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" id="b1" value="1" onclick="display.value+='1'"> </td>
+            <td> <input type="button" id="b2" value="2" onclick="display.value+='2'"> </td>
+            <td> <input type="button" id="b3" value="3" onclick="display.value+='3'"> </td>
+            <td> <input type="button" id="Add" value="+" onclick="display.value+='+'"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" id="b4" value="4" onclick="display.value+='4'"> </td>
+            <td> <input type="button" id="b5" value="5" onclick="display.value+='5'"> </td>
+            <td> <input type="button" id="b6" value="6" onclick="display.value+='6'"> </td>
+            <td> <input type="button" id="Sub" value="-" onclick="display.value+='-'"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" id="b7" value="7" onclick="display.value+='7'"> </td>
+            <td> <input type="button" id="b8" value="8" onclick="display.value+='8'"> </td>
+            <td> <input type="button" id="b9" value="9" onclick="display.value+='9'"> </td>
+            <td> <input type="button" id="Multiply" value="×" onclick="display.value+='*'"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" id="Clear" value="C" onclick="display.value=''"> </td>
+            <td> <input type="button" id="b0" value="0" onclick="display.value+='8'"> </td>
+            <td> <input type="button" id="Equal" value="=" onclick="display.value=eval(display.value)"> </td>
+            <td> <input type="button" id="Div" value="÷" onclick="display.value+='/'"> </td>
+        </tr>
+        <!--alt+247 is approximately-->
+    </table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+        <title>Document</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <style>
+            #n{
+                color:#39FF14;
+                font-Size:30px;
+                border:4px solid #FF10F0;
+                text-Shadow:23px 23px 23px #B026FF;
+                border-Radius:10px;
+                background-Color:#5E1914;
+                font-Family:Cookie, cursive;
+                padding:5px;
+            }
+            .radio{
+                color:#FF3131;
+                font-Size:26px;
+                text-Shadow:11px 11px 11px #B026FF;
+                font-Family:Cookie, cursive;
+                padding:5px;
+            }
+            button{
+                color:#5E1914;
+                font-Size:30px;
+                border:4px solid #FF10F0;
+                text-Shadow:23px 23px 23px #B026FF;
+                border-Radius:10px;
+                background-Color:#11FFEE;
+                font-Family:Cookie, cursive;
+                padding:5px;
+            }
+            #f{
+                color:#5E1914;
+                font-Size:22px;
+                border:4px solid #FF10F0;
+                text-Shadow:23px 23px 23px #B026FF;
+                border-Radius:10px;
+                background-Color:#39FF14;
+                font-Family:Cookie, cursive;
+                padding:5px;
+            }
+            #w{
+                color:#5E1914;
+                font-Size:22px;
+                border:4px solid #FF10F0;
+                text-Shadow:23px 23px 23px #B026FF;
+                border-Radius:10px;
+                background-Color:#11FFEE;
+                font-Family:Cookie, cursive;
+                padding:5px;
+            }
+        </style>
+    </head> 
+<body> <!-- <form id="mainForm" name="mainForm"> --> 
+    <label id="f">Enter your name:</label>
+    <input type="text" id="n"> 
+    <br><br>
+    <label id="w">Select your gender:</label>
+    <br><br>
+    <div class="radio">
+        <input type="radio" name="gender" value="Male" checked/>    Male 
+        <br><br>
+        <input type="radio" name="gender" value="Female" />     Female
+        <br><br>
+        <input type="radio" name="gender" value="Others" />     Others 
+    </div> 
+    <br><br>
+    <button onclick="c()">Try clicking this!</button> <!-- </form> --> <br><br>
+    <span id="result"><input type="text" size="80" disabled></span> 
+    <script> 
+        function c(){
+        var gender = document.querySelector('input[name = gender]:checked').value; 
+        if (gender=="Male") 
+            result.innerHTML = 'Hi Mr. '+document.getElementById("n").value;
+        else if(gender=="Female")
+            result.innerHTML = 'Hi Ms. '+document.getElementById("n").value;
+        else 
+            result.innerHTML = 'Hi '+document.getElementById("n").value;
+        document.getElementById("result").style.color="#39FF14";
+        document.getElementById("result").style.fontSize="30px";
+        document.getElementById("result").style.border="4px solid #FF10F0";
+        document.getElementById("result").style.textShadow="23px 23px 23px #B026FF";
+        document.getElementById("result").style.borderRadius="10px";
+        document.getElementById("result").style.backgroundColor="#5E1914";
+        document.getElementById("result").style.fontFamily="Cookie, cursive";
+        } 
+    </script> 
+</body> 
+</html>

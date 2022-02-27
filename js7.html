@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //function ChangePara(){
+          //  var customerName = prompt("Please enter your name", "Write Here! (get the pun?)");
+            //if (customerName!= null) { 
+              //  document.getElementById("hi").innerHTML =
+
+//                "Hello " + customerName + "! How are you today?";
+  //          }
+    //    }
+        function greet()
+        {
+            // alert("hi");
+            var n=document.getElementById("name").value;
+            alert(n);
+            document.getElementById("message").value="Hello! "+n+", How are you today?";
+        }
+    </script>
+</head>
+<body>
+    <label for="name">Enter your name: </label>
+    <input type="text" id="name">
+    <br><br>
+    <button onclick="greet()">OK</button>
+    <br><br>
+    <input type="text" id="message" size="40">
+    <!--<p id="hi"></p>
+    <button onclick="ChangePara()">Ooh! A button! I wonder... what does it do?</button>-->
+</body>
+</html>

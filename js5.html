@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changecol()
+        {
+            c=document.getElementById("col").value;
+            document.getElementById("para").style.backgroundColor=c;
+            document.getElementById("para").style.borderRadius="30px";
+            document.getElementById("para").style.border="4px solid #FF10F0";
+            document.getElementById("para").style.padding="5px";
+        }
+    </script>
+</head>
+<body>
+    <h1>Dropdown menu</h1>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet quibusdam, nisi amet dolore dolores repudiandae veniam consequatur aspernatur perspiciatis in pariatur, rerum architecto unde totam quas voluptates deleniti accusantium corrupti?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, rem ad tenetur quia quidem, error quo natus incidunt, pariatur itaque quos nisi vel dolores odio molestiae iure ullam! Necessitatibus, perferendis.</p>
+    <select name="color" id="col" onchange="changecol()">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="orange">Orange</option>
+    </select>
+</body>
+</html>

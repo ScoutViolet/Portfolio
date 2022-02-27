@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var a=parseInt(document.getElementById("fn").value);
+            var b=parseInt(document.getElementById("sn").value);
+            var c=a+b;
+            document.getElementById("res").value=c;
+        }
+        function ba(){
+            var a=parseInt(document.getElementById("fn").value);
+            var b=parseInt(document.getElementById("sn").value);
+            var c=a-b;
+            document.getElementById("res").value=c;
+        }
+        function ca(){
+            var a=parseInt(document.getElementById("fn").value);
+            var b=parseInt(document.getElementById("sn").value);
+            var c=a*b;
+            document.getElementById("res").value=c;
+        }
+        function da(){
+            var a=parseInt(document.getElementById("fn").value);
+            var b=parseInt(document.getElementById("sn").value);
+            var c=a/b;
+            document.getElementById("res").value=c;
+        }
+    </script>
+</head>
+<body>
+    <h1>Arithmetic Operations: Basic Calculator!</h1>
+    <h4>Made By: Edward Li</h4>
+    <h6>Note: This Calculator Displays Decimals</h6>
+    <label for="fn">Enter Number: </label>
+    <input type="text" id="fn">
+    <br><br>
+    <label for="sn">Enter Number: </label>
+    <input type="text" id="sn">
+    <br><br>
+    <button onclick="add()"> + </button>
+    <button onclick="ba()"> - </button>
+    <button onclick="ca()"> × </button>
+    <button onclick="da()"> ÷ </button>
+    <br><br>
+    <label for="res">Result: </label>
+    <input type="text" id="res" disabled>
+</body>
+</html>
